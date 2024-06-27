@@ -1,0 +1,41 @@
+services:
+  eps_db:
+    image: postgres:latest
+    env_file:
+      - db/.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - eps_volume:/var/lib/postgresql/data
+      - eps_volume:/tmp/eps/db/data
+    networks:
+      - eps_network
+  
+  eps_serp:
+    image: eps-serp:v0.1.0
+    ports:
+      - "9999:9999"
+    volumes:
+      - eps_volume:/tmp/eps/db/csv
+    restart: unless-stopped
+    depends_on:
+      eps_db:
+        condition: service_started
+    networks:
+      - eps_network
+  
+  eps_tg_bot:
+    image: epstgbot:v0.1.0
+    volumes:
+      - eps_volume:/tmp/eps/db/bot-storage
+    restart: unless-stopped
+    networks:
+      - eps_network
+
+networks:
+  eps_network:
+
+volumes:
+  eps_volume:
+
+    

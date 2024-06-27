@@ -1,0 +1,407 @@
+[2024-05-28 15:45:04][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-28 15:45:04][FATAL] 	failed to connect to DB, error: querying server version dial tcp 127.0.0.1:5432: connect: connection refused
+[2024-05-28 15:45:50][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-28 18:01:55][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 07:54:57][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 07:58:52][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 07:58:52][DEBUG] 	Browser found: false
+[2024-05-29 07:59:05][ERROR] 	[launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 07:59:05][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 07:59:06][ERROR] 	recover goroutine panic: [launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 07:59:14][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 07:59:14][DEBUG] 	Browser found: false
+[2024-05-29 07:59:15][ERROR] 	[launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 07:59:15][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 07:59:16][ERROR] 	recover goroutine panic: [launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 08:00:38][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 08:00:56][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:00:56][DEBUG] 	Browser found: false
+[2024-05-29 08:00:57][ERROR] 	[launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 08:00:57][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:00:58][ERROR] 	recover goroutine panic: [launcher] Failed to launch the browser, the doc might help https://go-rod.github.io/#/compatibility?id=os: /root/.cache/rod/browser/chromium-1131003/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+
+[2024-05-29 08:03:53][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 08:04:11][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:04:11][DEBUG] 	Browser found: true
+[2024-05-29 08:04:12][ERROR] 	[launcher] Failed to get the debug url: [0529/080411.201376:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-29 08:04:12][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:04:13][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0529/080412.497851:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-29 08:26:34][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 08:26:46][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:26:46][DEBUG] 	Browser found: true
+[2024-05-29 08:26:48][ERROR] 	[launcher] Failed to get the debug url: [0529/082646.936900:ERROR:filesystem_posix.cc(63)] mkdir /tmp/Crashpad/new: Permission denied (13)
+
+[2024-05-29 08:26:48][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:27:00][ERROR] 	recover goroutine panic: navigation failed: net::ERR_NAME_NOT_RESOLVED
+[2024-05-29 08:27:10][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:27:10][DEBUG] 	Browser found: true
+[2024-05-29 08:27:11][ERROR] 	[launcher] Failed to get the debug url: [0529/082710.769461:ERROR:filesystem_posix.cc(63)] mkdir /tmp/Crashpad/new: Permission denied (13)
+[0529/082710.769799:ERROR:socket.cc(120)] recvmsg: Connection reset by peer (104)
+
+[2024-05-29 08:27:11][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:27:12][ERROR] 	recover goroutine panic: navigation failed: net::ERR_NAME_NOT_RESOLVED
+[2024-05-29 08:31:34][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 08:35:29][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:35:29][DEBUG] 	Browser found: true
+[2024-05-29 08:35:30][ERROR] 	[launcher] Failed to get the debug url: [0529/083529.339125:ERROR:filesystem_posix.cc(63)] mkdir /tmp/Crashpad/new: Permission denied (13)
+[0529/083529.339436:ERROR:socket.cc(120)] recvmsg: Connection reset by peer (104)
+
+[2024-05-29 08:35:30][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:35:30][ERROR] 	recover goroutine panic: navigation failed: net::ERR_NAME_NOT_RESOLVED
+[2024-05-29 08:38:44][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 08:38:50][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 08:38:50][DEBUG] 	Browser found: true
+[2024-05-29 08:38:50][DEBUG] 	Navigate to: https://www.google./search?cr=countryDU&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=How+to+buy+a+car+in+germany%3F
+[2024-05-29 08:38:50][ERROR] 	recover goroutine panic: navigation failed: net::ERR_NAME_NOT_RESOLVED
+[2024-05-29 09:09:33][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-29 09:10:57][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-29 09:10:57][DEBUG] 	Browser found: true
+[2024-05-29 09:10:58][ERROR] 	[launcher] Failed to get the debug url: [0529/091057.197951:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-29 09:10:58][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang
+[2024-05-29 09:10:59][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0529/091058.622521:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-30 14:56:08][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-30 14:56:08][FATAL] 	failed to connect to DB, error: querying server version dial tcp 127.0.0.1:5432: connect: connection refused
+[2024-05-30 14:56:23][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-30 14:58:04][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-30 14:58:04][DEBUG] 	Browser found: true
+[2024-05-30 14:58:05][ERROR] 	[launcher] Failed to get the debug url: [0530/145804.737293:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-30 14:58:05][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang
+[2024-05-30 14:58:07][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0530/145806.006607:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-30 14:59:16][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-30 14:59:20][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-30 14:59:20][DEBUG] 	Browser found: true
+[2024-05-30 14:59:21][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang
+[2024-05-30 14:59:23][INFO] 	236000 total results found
+[2024-05-30 14:59:33][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=10
+[2024-05-30 14:59:36][INFO] 	2236000 total results found
+[2024-05-30 14:59:42][ERROR] 	Search: extractContactInfo.Get: Get "https://glossarytech.com/terms/golang": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 14:59:42][ERROR] 	Search: extractKeywords: Get "https://glossarytech.com/terms/golang": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 14:59:44][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=20
+[2024-05-30 14:59:46][INFO] 	3236000 total results found
+[2024-05-30 14:59:46][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 14:59:49][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 14:59:51][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 14:59:53][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=30
+[2024-05-30 14:59:55][INFO] 	4212000 total results found
+[2024-05-30 14:59:56][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 14:59:57][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:09][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-30 15:00:09][DEBUG] 	Browser found: true
+[2024-05-30 15:00:09][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang
+[2024-05-30 15:00:12][INFO] 	236000 total results found
+[2024-05-30 15:00:13][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=40
+[2024-05-30 15:00:15][INFO] 	5212000 total results found
+[2024-05-30 15:00:15][ERROR] 	Search: extractKeywords: Forbidden
+[2024-05-30 15:00:19][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:21][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=10
+[2024-05-30 15:00:23][INFO] 	2236000 total results found
+[2024-05-30 15:00:24][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=50
+[2024-05-30 15:00:26][ERROR] 	Search: extractContactInfo.Get: Get "https://glossarytech.com/terms/golang": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 15:00:26][ERROR] 	Search: extractKeywords: Get "https://glossarytech.com/terms/golang": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 15:00:27][INFO] 	6212000 total results found
+[2024-05-30 15:00:28][ERROR] 	Search: extractKeywords: 
+[2024-05-30 15:00:32][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=20
+[2024-05-30 15:00:34][INFO] 	3236000 total results found
+[2024-05-30 15:00:34][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=60
+[2024-05-30 15:00:35][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:37][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:37][INFO] 	7212000 total results found
+[2024-05-30 15:00:37][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:39][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=30
+[2024-05-30 15:00:42][INFO] 	4212000 total results found
+[2024-05-30 15:00:42][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:43][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:00:43][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=70
+[2024-05-30 15:00:46][INFO] 	8212000 total results found
+[2024-05-30 15:00:50][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=40
+[2024-05-30 15:00:53][INFO] 	5212000 total results found
+[2024-05-30 15:00:53][ERROR] 	Search: extractKeywords: Forbidden
+[2024-05-30 15:00:54][ERROR] 	Search: extractContactInfo.Get: Get "https://glossarytech.com/terms/golang/go": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 15:00:54][ERROR] 	Search: extractKeywords: Get "https://glossarytech.com/terms/golang/go": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-30 15:00:54][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=80
+[2024-05-30 15:00:56][INFO] 	9212000 total results found
+[2024-05-30 15:00:58][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=50
+[2024-05-30 15:01:00][INFO] 	6212000 total results found
+[2024-05-30 15:01:02][ERROR] 	Search: extractContactInfo.Get: Get "https://remotify.me/remote-job/35876/remote-intermediate-or-senior-go-golang-developer": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-05-30 15:01:03][ERROR] 	Search: extractKeywords: 
+[2024-05-30 15:01:05][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=60
+[2024-05-30 15:01:08][INFO] 	7212000 total results found
+[2024-05-30 15:01:08][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:01:12][ERROR] 	Search: extractKeywords: Get "https://remotify.me/remote-job/35876/remote-intermediate-or-senior-go-golang-developer": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-05-30 15:01:12][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:01:13][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-30 15:01:14][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=70
+[2024-05-30 15:01:15][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang&start=90
+[2024-05-30 15:02:51][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-30 15:03:23][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-30 15:04:17][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-30 15:04:17][DEBUG] 	Browser found: true
+[2024-05-30 15:04:17][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F
+[2024-05-30 15:04:20][INFO] 	854000 total results found
+[2024-05-30 15:04:26][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=10
+[2024-05-31 20:22:40][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-31 20:23:19][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-31 20:23:19][DEBUG] 	Browser found: true
+[2024-05-31 20:23:20][ERROR] 	[launcher] Failed to get the debug url: [0531/202319.670041:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-31 20:23:20][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F
+[2024-05-31 20:23:21][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0531/202320.914452:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-31 20:23:58][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-31 20:24:05][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-31 20:24:05][DEBUG] 	Browser found: true
+[2024-05-31 20:24:05][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F
+[2024-05-31 20:24:08][INFO] 	778000 total results found
+[2024-05-31 20:24:16][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=10
+[2024-05-31 20:24:18][INFO] 	2778000 total results found
+[2024-05-31 20:24:34][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=20
+[2024-05-31 20:24:36][INFO] 	3778000 total results found
+[2024-05-31 20:24:44][ERROR] 	Search: extractContactInfo.Get: Get "https://www.hsv-pi.nl/en/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:24:45][ERROR] 	Search: extractKeywords: Get "https://www.hsv-pi.nl/en/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:24:46][ERROR] 	Search: extractKeywords: 
+[2024-05-31 20:24:53][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=30
+[2024-05-31 20:24:55][INFO] 	4778000 total results found
+[2024-05-31 20:25:15][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=40
+[2024-05-31 20:25:18][INFO] 	5778000 total results found
+[2024-05-31 20:25:22][ERROR] 	Search: extractContactInfo.Get: Get "/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FProject%20Documents%2F226%2FCL%2004%20-%20Erste%20Group%20-%20EFRAG%20DCL%20PFS%202019.pdf&AspxAutoDetectCookieSupport=1": stopped after 10 redirects
+[2024-05-31 20:25:28][ERROR] 	Search: extractContactInfo.Get: Get "https://accounting.developer.riverty.com/accounting/computop-connector": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:25:28][ERROR] 	Search: extractKeywords: Get "https://accounting.developer.riverty.com/accounting/computop-connector": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:25:28][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=50
+[2024-05-31 20:25:31][INFO] 	6778000 total results found
+[2024-05-31 20:25:37][ERROR] 	Search: extractKeywords: Forbidden
+[2024-05-31 20:25:42][ERROR] 	Search: extractContactInfo.Get: Get "https://www.denso-am.eu/news/march-newsletter-denso-steers-safely-towards-autonomous-driving-with-new-fail-safe-eps-1": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-05-31 20:25:46][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=60
+[2024-05-31 20:25:48][INFO] 	7778000 total results found
+[2024-05-31 20:26:03][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=70
+[2024-05-31 20:26:05][INFO] 	8778000 total results found
+[2024-05-31 20:26:10][ERROR] 	Search: extractContactInfo.Get: Get "https://archives.palarch.nl/index.php/jae/article/download/4809/4740": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-05-31 20:26:23][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:24][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:24][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:25][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:25][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:25][ERROR] 	Search: extractContactInfo.Get: Get "https://www.hsv-pi.nl/en/piocelan-hybrid-solution-in-the-same-family-as-eps/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:26:25][ERROR] 	Search: extractKeywords: Get "https://www.hsv-pi.nl/en/piocelan-hybrid-solution-in-the-same-family-as-eps/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-05-31 20:26:26][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:28][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=80
+[2024-05-31 20:26:30][INFO] 	9778000 total results found
+[2024-05-31 20:26:32][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:37][ERROR] 	Search: extractKeywords: Bad Request
+[2024-05-31 20:26:45][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:26:51][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=90
+[2024-05-31 20:26:54][INFO] 	10803000 total results found
+[2024-05-31 20:26:56][ERROR] 	Search: extractKeywords: URL already visited
+[2024-05-31 20:27:05][ERROR] 	Search: extractKeywords: 
+[2024-05-31 20:27:07][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=How+to+find+EPS+customers%3F&start=100
+[2024-05-31 22:18:18][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-31 22:33:12][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-31 22:36:21][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-05-31 22:36:35][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-05-31 22:36:35][DEBUG] 	Browser found: true
+[2024-05-31 22:36:36][ERROR] 	[launcher] Failed to get the debug url: [0531/223635.493073:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-31 22:36:36][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-10
+[2024-05-31 22:36:37][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0531/223636.769659:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-05-31 22:44:22][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 07:59:41][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:15:09][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:17:17][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:37:10][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:40:35][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:42:08][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-06-01 08:42:08][DEBUG] 	Browser found: true
+[2024-06-01 08:42:09][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22
+[2024-06-01 08:42:11][INFO] 	955 total results found
+[2024-06-01 08:42:14][ERROR] 	Search: extractKeywords: Forbidden
+[2024-06-01 08:42:16][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22&start=10
+[2024-06-01 08:42:18][INFO] 	2821 total results found
+[2024-06-01 08:42:26][ERROR] 	Search: extractContactInfo.Get: Get "https://mirror.transip.net/ubuntu/ubuntu/pool/main/g/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-06-01 08:42:36][ERROR] 	Search: extractKeywords: Get "https://mirror.transip.net/ubuntu/ubuntu/pool/main/g/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-06-01 08:42:36][ERROR] 	Search: extractKeywords: Forbidden
+[2024-06-01 08:42:39][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22&start=20
+[2024-06-01 08:42:41][INFO] 	3821 total results found
+[2024-06-01 08:42:42][ERROR] 	Search: extractKeywords: Not Found
+[2024-06-01 08:42:44][ERROR] 	Search: extractKeywords: 
+[2024-06-01 08:42:48][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22&start=30
+[2024-06-01 08:42:50][INFO] 	4714 total results found
+[2024-06-01 08:42:55][ERROR] 	Search: extractContactInfo.Get: Get "https://meticulous.software/v/containerized/commit/fac36212bd02856da2d33c4feb6eba2a683408e7": dial tcp 175.110.114.252:443: connect: no route to host
+[2024-06-01 08:42:58][ERROR] 	Search: extractKeywords: Get "https://meticulous.software/v/containerized/commit/fac36212bd02856da2d33c4feb6eba2a683408e7": dial tcp 175.110.114.252:443: connect: no route to host
+[2024-06-01 08:42:58][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-01 08:43:03][ERROR] 	Search: extractContactInfo.ReadAll: context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[2024-06-01 08:43:14][ERROR] 	Search: extractContactInfo.Get: Get "https://mirror.lyrahosting.com/slackware/slackware64-current/PACKAGES.TXT": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2024-06-01 08:43:25][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22&start=40
+[2024-06-01 08:43:28][INFO] 	546 total results found
+[2024-06-01 08:43:29][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-01 08:43:30][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-01 08:43:37][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:44:59][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:45:46][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-06-01 08:45:46][DEBUG] 	Browser found: true
+[2024-06-01 08:45:47][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22.1
+[2024-06-01 08:45:49][INFO] 	9 total results found
+[2024-06-01 08:45:53][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:46:00][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-01 08:46:08][INFO] 	ExportCSV: %wpq: could not open file "/opt/eps/Golang-2024-06-01_08:46:08.csv" for writing: Permission denied
+[2024-06-01 08:50:13][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 19:47:54][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 19:51:45][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 20:00:54][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 20:02:12][INFO] 	ExportCSV: pq: could not open file "/opt/eps/Golang-2024-06-02_20:02:12.csv" for writing: Permission denied
+[2024-06-02 20:03:15][INFO] 	ExportCSV: pq: could not open file "/opt/eps/Golang-2024-06-02_20:03:15.csv" for writing: Permission denied
+[2024-06-02 20:32:02][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 20:32:41][INFO] 	ExportCSV: pq: could not open file "/opt/eps/Golang-2024-06-02_20:32:41.csv" for writing: Permission denied
+[2024-06-02 20:45:38][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 20:47:51][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_20:47:51.csv" for writing: No such file or directory
+[2024-06-02 22:50:54][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 22:51:01][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_22:51:01.csv" for writing: Permission denied
+[2024-06-02 22:52:58][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_22:52:58.csv" for writing: Permission denied
+[2024-06-02 22:53:19][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 22:53:25][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_22:53:25.csv" for writing: Permission denied
+[2024-06-02 22:57:29][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 22:57:38][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_22:57:38.csv" for writing: Permission denied
+[2024-06-02 23:00:33][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:00:37][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_23:00:37.csv" for writing: Permission denied
+[2024-06-02 23:01:04][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:01:04][FATAL] 	listen tcp :9999: bind: address already in use
+[2024-06-02 23:01:27][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:03:42][INFO] 	ExportCSV: pq: could not open file "/tmp/eps/Golang-2024-06-02_23:01:35.csv" for writing: Permission denied: sql: transaction has already been committed or rolled back
+[2024-06-02 23:03:53][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:04:34][INFO] 	ExportCSV: ExportCSV.ExecContext: pq: could not open file "/tmp/eps/Golang-2024-06-02_23:03:58.csv" for writing: Permission denied
+[2024-06-02 23:06:13][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:06:25][INFO] 	ExportCSV: ExecContext: pq: syntax error at or near "\"
+[2024-06-02 23:06:49][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:06:56][INFO] 	ExportCSV: ExecContext: pq: syntax error at or near "\"
+[2024-06-02 23:07:22][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:17:59][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:17:59][FATAL] 	listen tcp :9999: bind: address already in use
+[2024-06-02 23:19:30][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:20:01][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/Golang-2024-06-02_23:20:01.csv" for writing: Permission denied
+[2024-06-02 23:21:42][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:21:50][INFO] 	ExportCSV: ExecContext: pq: relative path not allowed for COPY to file
+[2024-06-02 23:21:57][INFO] 	ExportCSV: ExecContext: pq: relative path not allowed for COPY to file
+[2024-06-02 23:22:43][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-02 23:23:02][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/Golang-2024-06-02_23:23:02.csv" for writing: Permission denied
+[2024-06-03 06:43:49][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 06:44:13][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/Golang-2024-06-03_06:44:13.csv" for writing: Permission denied
+[2024-06-03 06:47:29][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 06:47:41][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/Golang-2024-06-03_06:47:41.csv" for writing: Permission denied
+[2024-06-03 06:59:30][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 06:59:30][FATAL] 	failed to connect to DB, error: querying server version pq: Ident authentication failed for user "eps_user"
+[2024-06-03 07:02:48][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:02:48][FATAL] 	failed to connect to DB, error: querying server version pq: Ident authentication failed for user "eps_user"
+[2024-06-03 07:07:48][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:07:48][FATAL] 	failed to connect to DB, error: querying server version pq: password authentication failed for user "eps_user"
+[2024-06-03 07:14:34][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:14:34][FATAL] 	failed to connect to DB, error: querying server version pq: password authentication failed for user "eps_user"
+[2024-06-03 07:15:33][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:15:47][INFO] 	ExportCSV: ent: search_query not found
+[2024-06-03 07:18:24][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:18:27][INFO] 	ExportCSV: ent: search_query not found
+[2024-06-03 07:19:08][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-06-03 07:19:08][DEBUG] 	Browser found: true
+[2024-06-03 07:19:09][ERROR] 	[launcher] Failed to get the debug url: [0603/071908.564196:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-06-03 07:19:09][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Golang-1.22.1
+[2024-06-03 07:19:10][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0603/071909.806442:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-06-03 07:19:37][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:20:00][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-06-03 07:20:00][DEBUG] 	Browser found: true
+[2024-06-03 07:20:00][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG
+[2024-06-03 07:20:03][INFO] 	9280000 total results found
+[2024-06-03 07:20:09][ERROR] 	Search: extractKeywords: Forbidden
+[2024-06-03 07:20:09][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=10
+[2024-06-03 07:20:12][INFO] 	29250000 total results found
+[2024-06-03 07:20:12][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:16][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=20
+[2024-06-03 07:20:19][INFO] 	39420000 total results found
+[2024-06-03 07:20:20][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:29][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=30
+[2024-06-03 07:20:32][INFO] 	49980000 total results found
+[2024-06-03 07:20:39][ERROR] 	Search: extractKeywords: Not Found
+[2024-06-03 07:20:39][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=40
+[2024-06-03 07:20:42][INFO] 	59980000 total results found
+[2024-06-03 07:20:43][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:47][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=50
+[2024-06-03 07:20:50][INFO] 	69980000 total results found
+[2024-06-03 07:20:50][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:50][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:53][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=60
+[2024-06-03 07:20:56][INFO] 	79980000 total results found
+[2024-06-03 07:20:56][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:20:58][ERROR] 	Search: extractContactInfo.Get: Get "https://www.trackjackeurope.com/en/trackjack-go/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-06-03 07:20:58][ERROR] 	Search: extractKeywords: Get "https://www.trackjackeurope.com/en/trackjack-go/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+[2024-06-03 07:21:02][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=70
+[2024-06-03 07:21:05][INFO] 	89980000 total results found
+[2024-06-03 07:21:09][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=80
+[2024-06-03 07:21:11][INFO] 	99980000 total results found
+[2024-06-03 07:21:14][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:21:18][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:21:19][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=90
+[2024-06-03 07:21:22][INFO] 	109980000 total results found
+[2024-06-03 07:21:29][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:21:29][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=100
+[2024-06-03 07:21:31][INFO] 	119980000 total results found
+[2024-06-03 07:21:36][ERROR] 	Search: extractKeywords: Forbidden
+[2024-06-03 07:21:40][ERROR] 	Search: extractKeywords: URL already visited
+[2024-06-03 07:21:40][DEBUG] 	Navigate to: https://www.google.com/search?cr=countryNL&hl=En&lr=lang_en&nfpr=1&num=10&pws=0&q=Install+GOLANG&start=110
+[2024-06-03 07:21:43][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:21:43.csv" for writing: Permission denied
+[2024-06-03 07:21:52][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:22:03][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:22:25][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:22:30][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:22:30.csv" for writing: Permission denied
+[2024-06-03 07:24:40][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:24:40.csv" for writing: Permission denied
+[2024-06-03 07:36:57][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:37:05][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:37:05.csv" for writing: Permission denied
+[2024-06-03 07:38:18][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:38:18.csv" for writing: Permission denied
+[2024-06-03 07:44:26][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:44:32][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:44:32.csv" for writing: Permission denied
+[2024-06-03 07:45:15][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:45:23][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/Golang-1.22.1-2024-06-03_07:45:23.csv" for writing: Permission denied
+[2024-06-03 07:48:40][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:48:44][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:49:08][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:49:56][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:50:08][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:51:22][INFO] 	ExportCSV: ExecContext: pq: could not open file "/home/eps-crawler/eps/EPS/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:52:50][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:52:55][INFO] 	ExportCSV: openFile: open /tmp/eps/db/csv/export.csv%!(EXTRA string=/home/eps-crawler/eps/EPS): no such file or directory
+[2024-06-03 07:53:52][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:53:57][INFO] 	ExportCSV: openFile: open /tmp/eps/db/csv/export.csv: permission denied
+[2024-06-03 07:55:15][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:55:35][INFO] 	ExportCSV: openFile: open /tmp/eps/db/csv/export.csv: permission denied
+[2024-06-03 07:57:45][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 07:57:49][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 07:58:03][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 08:05:37][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 08:05:49][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 08:08:34][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 08:08:38][INFO] 	ExportCSV: ExecContext: pq: could not open file "/tmp/eps/db/csv/export.csv" for writing: Permission denied
+[2024-06-03 08:16:49][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 08:43:16][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 08:51:46][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 09:00:10][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-03 09:00:37][DEBUG] 	Browser options: {IsHeadless:true IsLeakless:false Timeout:10m0s LanguageCode: WaitRequests:false LeavePageOpen:false WaitLoadTime:2s}
+[2024-06-03 09:00:37][DEBUG] 	Browser found: true
+[2024-06-03 09:00:38][ERROR] 	[launcher] Failed to get the debug url: [0603/090037.512980:ERROR:zygote_host_impl_linux.cc(99)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-06-03 09:00:38][DEBUG] 	Navigate to: https://www.google./search?cr=countryPT&hl=du&lr=lang_du&nfpr=1&num=10&pws=0&q=Find+Eps+clients
+[2024-06-03 09:00:39][ERROR] 	recover goroutine panic: [launcher] Failed to get the debug url: [0603/090038.783003:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+[2024-06-03 09:44:45][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-10 17:27:19][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-10 17:27:19][FATAL] 	failed to connect to DB, error: querying server version dial tcp: lookup eps_db on 192.168.189.1:53: server misbehaving
+[2024-06-10 17:28:18][DEBUG] 	Final config: {App:{Host:0.0.0.0 Port:7000 Timeout:600 ConfigPath: IsBrowserHead:false IsLeaveHead:false IsLeakless:false IsDebug:false IsVerbose:true} GoogleConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} YandexConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0} BaiduConfig:{RateRequests:4 RateTime:0 RateBurst:2 SelectorTimeout:0}}
+[2024-06-10 17:28:18][FATAL] 	failed to connect to DB, error: querying server version dial tcp 127.0.0.1:5432: connect: connection refused

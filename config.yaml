@@ -1,0 +1,20 @@
+app:
+  host: 0.0.0.0
+  port: 7000
+  debug: false
+  verbose: true
+  timeout: 600
+  head: false
+  leakless: false
+
+google:
+  rate_requests: 4     # Number of requests per Minute
+  rate_burst: 2        # Number of non-ratelimited requests per Minute
+
+yandex:
+  rate_requests: 4     
+  rate_burst: 2        
+
+baidu:
+  rate_requests: 4     
+  rate_burst: 2        
