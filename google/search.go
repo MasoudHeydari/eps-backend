@@ -2,10 +2,7 @@ package google
 
 import (
 	"errors"
-	"fmt"
-	"io"
 	"net/http"
-	"net/url"
 	"regexp"
 	"strconv"
 	"strings"
@@ -104,6 +101,7 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 	}
 
 	page := gogl.Navigate(url)
+	// defer gogl.Browser.Close()
 	gogl.preparePage(page)
 
 	results, err := page.Timeout(gogl.Timeout).Search("div[data-hveid][data-ved][lang], div[data-surl][jsaction]")
@@ -209,7 +207,7 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 }
 
 func (gogl *Google) extractKeywords(path string) ([]string, error) {
-	var (
+	/*var (
 		maxLen               = 6
 		maxLenForEachKeyword = 72
 		h1h2h3QuerySelector  = "h1, h2, h3"
@@ -243,11 +241,12 @@ func (gogl *Google) extractKeywords(path string) ([]string, error) {
 	if len(keyWords) > maxLen {
 		keyWords = keyWords[:maxLen]
 	}
-	return keyWords, nil
+	return keyWords, nil*/
+	return make([]string, 0), nil
 }
 
 func (gogl *Google) extractEmails(path string) ([]string, error) {
-	emailsMap := make(map[string]struct{})
+	/*emailsMap := make(map[string]struct{})
 	emails := make([]string, 0)
 	resp, err := gogl.client.Get(path)
 	if err != nil {
@@ -269,7 +268,8 @@ func (gogl *Google) extractEmails(path string) ([]string, error) {
 	for k := range emailsMap {
 		emails = append(emails, k)
 	}
-	return emails, nil
+	return emails, nil*/
+	return make([]string, 0), nil
 }
 
 func (gogl *Google) extractPhoneNumbers(path string) []string {
@@ -293,7 +293,7 @@ func (gogl *Google) extractPhoneNumbers(path string) []string {
 }
 
 func (gogl *Google) extractPhoneNumbersFromAllPossibleURLs(p string) ([]string, error) {
-	phoneNums := make([]string, 0)
+	/*phoneNums := make([]string, 0)
 	pathes := make(map[string]struct{}, 0)
 	u, err := url.Parse(p)
 	if err != nil {
@@ -320,5 +320,6 @@ func (gogl *Google) extractPhoneNumbersFromAllPossibleURLs(p string) ([]string, 
 	for k := range phonesMap {
 		results = append(results, k)
 	}
-	return results, nil
+	return results, nil*/
+	return make([]string, 0), nil
 }

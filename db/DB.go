@@ -10,7 +10,7 @@ import (
 )
 
 func NewDB() (*ent.Client, error) {
-	client, err := ent.Open(dialect.Postgres, "host=eps_db port=5432 user=eps_user dbname=eps_db password=eps_password sslmode=disable")
+	client, err := ent.Open(dialect.Postgres, "host=127.0.0.1 port=5432 user=eps_user dbname=eps_db password=eps_password sslmode=disable")
 	if err != nil {
 		return nil, err
 	}

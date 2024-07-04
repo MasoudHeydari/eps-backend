@@ -86,9 +86,9 @@ func (b *Browser) Navigate(URL string) *rod.Page {
 	page.MustNavigate(URL)
 
 	// causes bugs in google
-	if b.WaitRequests {
-		wait()
-	}
+	// if b.WaitRequests {
+	wait()
+	// }
 
 	page.MustEmulate(devices.Device{
 		UserAgent:      uarand.GetRandom(),
