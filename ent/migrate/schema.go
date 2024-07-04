@@ -32,14 +32,14 @@ var (
 				Symbol:     "serps_search_queries_serps",
 				Columns:    []*schema.Column{SerpsColumns[9]},
 				RefColumns: []*schema.Column{SearchQueriesColumns[0]},
-				OnDelete:   schema.SetNull,
+				OnDelete:   schema.Cascade,
 			},
 		},
 		Indexes: []*schema.Index{
 			{
-				Name:    "serp_url_phones_emails",
+				Name:    "serp_url_phones_emails_sq_id",
 				Unique:  true,
-				Columns: []*schema.Column{SerpsColumns[1], SerpsColumns[4], SerpsColumns[5]},
+				Columns: []*schema.Column{SerpsColumns[1], SerpsColumns[4], SerpsColumns[5], SerpsColumns[9]},
 			},
 		},
 	}

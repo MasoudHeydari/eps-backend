@@ -28,7 +28,7 @@ func ExportCSV(ctx context.Context, db *ent.Client, sqID int) (csvAbsFilePath, f
 	// if err != nil {
 	// 	return "", rollback(tx, fmt.Errorf("getwd: %w", err))
 	// }
-	fmt.Println(entSq.Query)
+	// fmt.Println(entSq.Query)
 	csvFileName := fmt.Sprintf("%s-%s.csv", entSq.Query, time.Now().Format("2006-01-02_15:04:05"))
 	// csvAbsFilePath = "/tmp/eps/db/data/export.csv" // "/tmp/eps/db/csv/export.csv"
 	// csvAbsFilePathInPsqlContainer := fmt.Sprintf("/tmp/eps/%s", csvFileName)
@@ -72,6 +72,7 @@ func ExportCSV(ctx context.Context, db *ent.Client, sqID int) (csvAbsFilePath, f
 }
 
 func rollback(tx *ent.Tx, err error) error {
+	fmt.Println("rollback: error: ", err)
 	if rErr := tx.Rollback(); rErr != nil {
 		err = fmt.Errorf("%w: %v", err, rErr)
 	}

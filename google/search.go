@@ -116,7 +116,6 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 	// Check why no results, maybe captcha?
 	if results == nil {
 		defer page.Close()
-
 		if gogl.isCaptcha(page) {
 			logrus.Errorf("Google captcha occurred during: %s", url)
 			return nil, core.ErrCaptcha
@@ -196,6 +195,7 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 			KeyWords:    keyWords,
 			Description: desc,
 		}
+		// fmt.Printf("%+v\n", gR)
 		searchResults = append(searchResults, gR)
 	}
 
@@ -205,7 +205,6 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 			logrus.Error(err)
 		}
 	}
-
 	return searchResults, nil
 }
 
@@ -213,10 +212,14 @@ func (gogl *Google) extractKeywords(path string) ([]string, error) {
 	var (
 		maxLen               = 6
 		maxLenForEachKeyword = 72
+		h1h2h3QuerySelector  = "h1, h2, h3"
 	)
 	keyWordsMap := make(map[string]struct{})
 	keyWords := make([]string, 0)
-	gogl.keywordCollector.OnHTML("h1, h2, h3", func(e *colly.HTMLElement) {
+	defer func() {
+		gogl.keywordCollector.OnHTMLDetach(h1h2h3QuerySelector)
+	}()
+	gogl.keywordCollector.OnHTML(h1h2h3QuerySelector, func(e *colly.HTMLElement) {
 		keyWordsMap[e.Text] = struct{}{}
 	})
 	err := gogl.keywordCollector.Visit(path)
@@ -224,12 +227,14 @@ func (gogl *Google) extractKeywords(path string) ([]string, error) {
 		return keyWords, fmt.Errorf("extractKeywords: %w", err)
 	}
 	if len(keyWordsMap) == 0 {
-		return keyWords, fmt.Errorf("no keyword found")
+		return keyWords, fmt.Errorf("no keyword found from %q", path)
 	}
 	for k := range keyWordsMap {
 		k = strings.TrimSpace(k)
-		k = strings.Trim(k, "\n")
-		k = strings.Trim(k, "\t")
+		// k = strings.Trim(k, "\n")
+		// k = strings.Trim(k, "\t")
+		k = strings.ReplaceAll(k, "\t", "")
+		k = strings.ReplaceAll(k, "\n", "")
 		if len(k) > maxLenForEachKeyword {
 			k = k[:maxLenForEachKeyword]
 		}
@@ -258,6 +263,9 @@ func (gogl *Google) extractEmails(path string) ([]string, error) {
 	for _, email := range emailsArray {
 		emailsMap[email] = struct{}{}
 	}
+	if len(emailsMap) == 0 {
+		return nil, fmt.Errorf("no email found from %q", path)
+	}
 	for k := range emailsMap {
 		emails = append(emails, k)
 	}
@@ -266,11 +274,19 @@ func (gogl *Google) extractEmails(path string) ([]string, error) {
 
 func (gogl *Google) extractPhoneNumbers(path string) []string {
 	matches := make([]string, 0)
-	gogl.phoneCollector.OnHTML("div", func(e *colly.HTMLElement) {
+	divQuerySelector := "div"
+	defer func() {
+		gogl.phoneCollector.OnHTMLDetach(divQuerySelector)
+	}()
+	gogl.phoneCollector.OnHTML(divQuerySelector, func(e *colly.HTMLElement) {
+		newMatches := gogl.findPhoneRgxp.FindAllString(e.Text, -1)
 		matches = append(
 			matches,
-			gogl.findPhoneRgxp.FindAllString(e.Text, -1)...,
+			newMatches...,
 		)
+		if len(newMatches) != 0 {
+			// fmt.Println("found phone numbers: ", newMatches)
+		}
 	})
 	gogl.phoneCollector.Visit(path)
 	return matches
@@ -293,7 +309,7 @@ func (gogl *Google) extractPhoneNumbersFromAllPossibleURLs(p string) ([]string, 
 		phoneNums = append(phoneNums, gogl.extractPhoneNumbers(pp)...)
 	}
 	if len(phoneNums) == 0 {
-		return phoneNums, fmt.Errorf("no phone number found")
+		return phoneNums, fmt.Errorf("no phone number found from %q", p)
 	}
 	phonesMap := make(map[string]struct{})
 	for _, phone := range phoneNums {

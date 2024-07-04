@@ -98,6 +98,7 @@ func Start() error {
 	e.PATCH("/api/v1/search", server.CancelSearchQuery)
 	e.GET("/api/v1/export/:sq_id", server.ExportCSV)
 	e.GET("/api/v1/search", server.GetAllSearchQueries)
+	// go server.searchInBackground()
 	return e.Start(":9999")
 }
 
@@ -114,7 +115,6 @@ func (s *Server) Search(c echo.Context) error {
 			return c.JSON(http.StatusConflict, err)
 		default:
 			return c.JSON(http.StatusInternalServerError, err)
-
 		}
 	}
 
@@ -124,10 +124,10 @@ func (s *Server) Search(c echo.Context) error {
 				logrus.Errorf("recover goroutine panic: %v", err)
 			}
 		}()
-		ctx, cancel := context.WithTimeout(context.Background(), 100*time.Minute)
+		ctx, cancel := context.WithTimeout(context.Background(), 2*time.Hour)
 		defer cancel()
 		search01(ctx, s.db, sq.Location, sq.Language, sq.Query, sqID)
-		fmt.Println("returned from goroutine")
+		logrus.Printf("Search Query: %+v finished\n", sq)
 	}()
 
 	return c.JSON(http.StatusOK, echo.Map{"sq_id": sqID})
@@ -213,7 +213,7 @@ func search01(ctx context.Context, client *ent.Client, loc, lang, searchQ string
 	for {
 		select {
 		case <-ctx.Done():
-			fmt.Println("Inserted all found results")
+			logrus.Println("Inserted all found results")
 			return
 		default:
 			results, err := searchBrowser(engine, query)
@@ -235,5 +235,32 @@ func search01(ctx context.Context, client *ent.Client, loc, lang, searchQ string
 			}
 			query.NextPage()
 		}
+	}
+}
+
+func (s *Server) searchInBackground() {
+	for {
+		ctx, cancel := context.WithTimeout(context.Background(), time.Hour*2)
+		defer cancel()
+		searchQueries, err := db.GetAllSearchQueries(ctx, s.db)
+		if err != nil {
+			logrus.Infof("searchInBackground: %v\n", err)
+			return
+		}
+		for _, searchQuery := range searchQueries {
+			time.Sleep(10 * time.Second)
+			go func(sq db.SearchQuery) {
+				defer func() {
+					if recErr := recover(); recErr != nil {
+						logrus.Infof("searchInBackground.Recover.err: %v\n", recErr)
+					}
+				}()
+				logrus.Infof("crawler just resumed for Search Query: %v\n", sq)
+				search01(ctx, s.db, sq.Location, sq.Language, sq.Query, sq.Id)
+			}(searchQuery)
+		}
+		<-ctx.Done()
+		logrus.Info("crawler sleeped for one day")
+		time.Sleep(24 * time.Hour)
 	}
 }

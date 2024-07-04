@@ -8,7 +8,7 @@ require (
 	entgo.io/ent v0.13.1
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/corpix/uarand v0.2.0
-	github.com/go-rod/rod v0.113.3
+	github.com/go-rod/rod v0.116.1
 	github.com/go-rod/stealth v0.4.9
 	github.com/gocolly/colly v1.2.0
 	github.com/gofiber/fiber/v2 v2.47.0
@@ -18,6 +18,7 @@ require (
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.16.0
+	golang.org/x/sys v0.19.0
 	golang.org/x/time v0.5.0
 )
 
@@ -69,14 +70,13 @@ require (
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/ysmood/fetchup v0.2.3 // indirect
 	github.com/ysmood/goob v0.4.0 // indirect
-	github.com/ysmood/got v0.34.1 // indirect
+	github.com/ysmood/got v0.40.0 // indirect
 	github.com/ysmood/gson v0.7.3 // indirect
 	github.com/ysmood/leakless v0.8.0 // indirect
 	github.com/zclconf/go-cty v1.8.0 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
 	golang.org/x/mod v0.15.0 // indirect
 	golang.org/x/net v0.24.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect

@@ -47,9 +47,21 @@ func NewBrowser(opts BrowserOpts) (*Browser, error) {
 
 	var err error
 	b := Browser{BrowserOpts: opts}
-	b.browserAddr, err = launcher.New().Bin(path).Leakless(opts.IsLeakless).Headless(opts.IsHeadless).Launch()
+	b.browserAddr, err = launcher.New().
+		Bin(path).
+		Leakless(opts.IsLeakless).
+		Headless(opts.IsHeadless).
+		NoSandbox(true).
+		Launch() // NoSandbox
 
 	return &b, err
+}
+
+func (b *Browser) Initialize() {
+	b.browser = rod.New().ControlURL(b.browserAddr)
+	b.browser.MustConnect()
+	b.browser.SetCookies(nil)
+	logrus.Debug("Browser initialized - Address: ", b.browserAddr)
 }
 
 // Check whether browser instance is already created
@@ -65,9 +77,9 @@ func (b *Browser) IsInitialized() bool {
 func (b *Browser) Navigate(URL string) *rod.Page {
 	logrus.Debug("Navigate to: ", URL)
 
-	b.browser = rod.New().ControlURL(b.browserAddr)
-	b.browser.MustConnect()
-	b.browser.SetCookies(nil)
+	// b.browser = rod.New().ControlURL(b.browserAddr)
+	// b.browser.MustConnect()
+	// b.browser.SetCookies(nil)
 
 	page := stealth.MustPage(b.browser)
 	wait := page.MustWaitRequestIdle()

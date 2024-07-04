@@ -28,7 +28,18 @@ func InsertNewSeaerchQuery(ctx context.Context, db *ent.Client, loc, lang, searc
 		SetQuery(searchQ).
 		Save(ctx)
 	if err != nil {
-		return -1, err
+		switch {
+		case ent.IsConstraintError(err):
+			err = db.SearchQuery.Update().
+				Where(searchquery.IsCanceled(true)).
+				SetIsCanceled(false).
+				Exec(ctx)
+			if err != nil {
+				return -1, err
+			}
+		default:
+			return -1, err
+		}
 	}
 	return sqEnt.ID, nil
 }
@@ -42,6 +53,7 @@ func GetAllSearchQueries(ctx context.Context, db *ent.Client) ([]SearchQuery, er
 	}
 	searchQueries := make([]SearchQuery, 0, len(entSearchQueries))
 	for _, entSearchQuery := range entSearchQueries {
+
 		searchQueries = append(searchQueries, SearchQuery{
 			Id:         entSearchQuery.ID,
 			Query:      entSearchQuery.Query,

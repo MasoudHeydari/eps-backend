@@ -54,7 +54,7 @@ func (SERP) Edges() []ent.Edge {
 // Indexes of the SERP.
 func (SERP) Indexes() []ent.Index {
 	return []ent.Index{
-		index.Fields("url", "phones", "emails").
+		index.Fields("url", "phones", "emails", "sq_id").
 			Unique(),
 	}
 }

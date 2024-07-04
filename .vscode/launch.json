@@ -10,7 +10,8 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}",
-            "args": ["serve"]
+            "args": ["serve"],
+            "asRoot": false
         }
     ]
 }
