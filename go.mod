@@ -6,6 +6,7 @@ go 1.21
 
 require (
 	entgo.io/ent v0.13.1
+	github.com/EDDYCJY/fake-useragent v0.2.0
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/corpix/uarand v0.2.0
 	github.com/go-rod/rod v0.116.1

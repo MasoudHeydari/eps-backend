@@ -3,11 +3,8 @@ package core
 import (
 	"time"
 
-	"github.com/corpix/uarand"
 	"github.com/go-rod/rod"
-	"github.com/go-rod/rod/lib/devices"
 	"github.com/go-rod/rod/lib/launcher"
-	"github.com/go-rod/stealth"
 	"github.com/sirupsen/logrus"
 )
 
@@ -35,7 +32,7 @@ func (o *BrowserOpts) Check() {
 type Browser struct {
 	BrowserOpts
 	browserAddr string
-	browser     *rod.Browser
+	// browser     *rod.Browser
 }
 
 func NewBrowser(opts BrowserOpts) (*Browser, error) {
@@ -57,12 +54,12 @@ func NewBrowser(opts BrowserOpts) (*Browser, error) {
 	return &b, err
 }
 
-func (b *Browser) Initialize() {
-	b.browser = rod.New().ControlURL(b.browserAddr)
-	b.browser.MustConnect()
-	b.browser.SetCookies(nil)
-	logrus.Debug("Browser initialized - Address: ", b.browserAddr)
-}
+// func (b *Browser) Initialize() {
+// 	b.browser = rod.New().ControlURL(b.browserAddr)
+// 	b.browser.MustConnect()
+// 	b.browser.SetCookies(nil)
+// 	logrus.Debug("Browser initialized - Address: ", b.browserAddr)
+// }
 
 // Check whether browser instance is already created
 func (b *Browser) IsInitialized() bool {
@@ -81,26 +78,26 @@ func (b *Browser) Navigate(URL string) *rod.Page {
 	// b.browser.MustConnect()
 	// b.browser.SetCookies(nil)
 
-	page := stealth.MustPage(b.browser)
-	wait := page.MustWaitRequestIdle()
-	page.MustNavigate(URL)
+	// page := stealth.MustPage(b.browser)
+	// wait := page.MustWaitRequestIdle()
+	// page.MustNavigate(URL)
 
 	// causes bugs in google
 	// if b.WaitRequests {
-	wait()
+	// wait()
 	// }
 
-	page.MustEmulate(devices.Device{
-		UserAgent:      uarand.GetRandom(),
-		AcceptLanguage: b.LanguageCode,
-	})
+	// page.MustEmulate(devices.Device{
+	// 	UserAgent:      uarand.GetRandom(),
+	// 	AcceptLanguage: b.LanguageCode,
+	// })
 
 	// Wait till page loads
 	time.Sleep(b.WaitLoadTime)
 
-	return page
+	return nil //page
 }
 
-func (b *Browser) Close() error {
-	return b.browser.Close()
-}
+// func (b *Browser) Close() error {
+// 	return b.browser.Close()
+// }

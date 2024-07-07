@@ -1,13 +1,18 @@
 package google
 
 import (
-	"errors"
+	"fmt"
+	"io"
+	"log"
+	"math/rand"
 	"net/http"
+	"net/url"
 	"regexp"
-	"strconv"
 	"strings"
 	"time"
 
+	fakeUserAgent "github.com/EDDYCJY/fake-useragent"
+	"github.com/PuerkitoBio/goquery"
 	"github.com/go-rod/rod"
 	"github.com/gocolly/colly"
 	"github.com/karust/openserp/core"
@@ -22,6 +27,7 @@ type Google struct {
 	keywordCollector                           *colly.Collector
 	findNumRgxp, findPhoneRgxp, findEmailRegex *regexp.Regexp
 	client                                     *http.Client
+	limiter                                    *rate.Limiter
 }
 
 func New(browser core.Browser, opts core.SearchEngineOptions) *Google {
@@ -35,6 +41,7 @@ func New(browser core.Browser, opts core.SearchEngineOptions) *Google {
 		phoneCollector:   phoneCollector,
 		keywordCollector: keywordCollector,
 		client:           &http.Client{Timeout: 20 * time.Second},
+		limiter:          rate.NewLimiter(1, 1),
 	}
 	opts.Init()
 	gogl.SearchEngineOptions = opts
@@ -54,42 +61,15 @@ func (gogl *Google) GetRateLimiter() *rate.Limiter {
 	return rate.NewLimiter(ratelimit, gogl.RateBurst)
 }
 
-func (gogl *Google) findTotalResults(page *rod.Page) (int, error) {
-	resultsStats, err := page.Timeout(gogl.GetSelectorTimeout()).Search("div#result-stats")
-	if err != nil {
-		return 0, errors.New("Result stats not found: " + err.Error())
-	}
-
-	stats, err := resultsStats.First.Text()
-	if err != nil {
-		return 0, errors.New("Cannot extract result stats text: " + err.Error())
-	}
-
-	// Escape moment with `seconds` and extract digits
-	allNums := gogl.findNumRgxp.FindAllString(stats[:len(stats)-15], -1)
-	stats = strings.Join(allNums, "")
-
-	total, err := strconv.Atoi(stats)
-	if err != nil {
-		return 0, err
-	}
-	return total, nil
-}
-
-func (gogl *Google) isCaptcha(page *rod.Page) bool {
-	_, err := page.Timeout(gogl.GetSelectorTimeout()).Search("form#captcha-form")
-	if err != nil {
-		return false
-	}
-	return true
-}
-
 func (gogl *Google) preparePage(page *rod.Page) {
 	// Remove "similar queries" lists
 	page.Eval(";(() => { document.querySelectorAll(`div[data-initq]`).forEach( el => el.remove());  })();")
 }
 
 func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
+	if !gogl.limiter.Allow() {
+		return nil, fmt.Errorf("too may request")
+	}
 	logrus.Tracef("Start Google search, query: %+v", query)
 
 	var searchResults []core.SearchResult
@@ -99,115 +79,65 @@ func (gogl *Google) Search(query core.Query) ([]core.SearchResult, error) {
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println("Navigate to: ", url)
 
-	page := gogl.Navigate(url)
-	// defer gogl.Browser.Close()
-	gogl.preparePage(page)
-
-	results, err := page.Timeout(gogl.Timeout).Search("div[data-hveid][data-ved][lang], div[data-surl][jsaction]")
+	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
-		defer page.Close()
-		logrus.Errorf("Cannot parse search results: %s", err)
-		return nil, core.ErrSearchTimeout
+		logrus.Fatal(err)
 	}
-
-	// Check why no results, maybe captcha?
-	if results == nil {
-		defer page.Close()
-		if gogl.isCaptcha(page) {
-			logrus.Errorf("Google captcha occurred during: %s", url)
-			return nil, core.ErrCaptcha
-		}
-		return nil, err
-	}
-
-	totalResults, err := gogl.findTotalResults(page)
+	req.Header.Set("User-Agent", fakeUserAgent.Random())
+	res, err := gogl.client.Do(req)
 	if err != nil {
-		logrus.Errorf("Error capturing total results: %v", err)
+		log.Fatal(err)
 	}
-	logrus.Infof("%d total results found", totalResults)
-
-	resultElements, err := results.All()
+	defer time.Sleep(time.Second * time.Duration(getRandomSec()))
+	defer gogl.client.CloseIdleConnections()
+	defer res.Body.Close()
+	fmt.Println("status code: ", res.StatusCode, " - Text: ", http.StatusText(res.StatusCode))
+	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
-		return nil, err
+		log.Fatal(err)
 	}
-
-	for i, r := range resultElements {
-		// Get URL
-		link, err := r.Element("a")
-		if err != nil {
-			continue
+	querySelector := "div[data-hveid][data-ved][lang], div[data-surl][jsaction]"
+	doc.Find(querySelector).Each(func(i int, result *goquery.Selection) {
+		link, found := result.Find("a").First().Attr("href")
+		if !found {
+			logrus.Info(
+				"No url found",
+				"query", query,
+			)
+			return
 		}
-		linkText, err := link.Property("href")
-		if err != nil {
-			logrus.Error("No `href` tag found")
-		}
-
-		// Get title
-		titleTag, err := link.Element("h3")
-		if err != nil {
-			logrus.Error("No `h3` tag found")
-			continue
-		}
-
-		title, err := titleTag.Text()
-		if err != nil {
-			logrus.Error("Cannot extract text from title")
-			title = "No title"
-		}
-
-		// Get description
-		// doesn't catch all
-		descTag, err := r.Element(`div[data-sncf~="1"]`)
-		desc := ""
-		if err != nil {
-			logrus.Trace(`No description 'div[data-sncf~="1"]' tag found`)
-		} else {
-			desc = descTag.MustText()
-		}
-
-		// extract contact-info
-		emails, err := gogl.extractEmails(linkText.String())
+		title := result.Find("h3").First().Text()
+		desc := result.Find(`div[data-sncf~="1"]`).First().Text()
+		emails, err := gogl.extractEmails(link)
 		if err != nil {
 			logrus.Errorf("Search: %v", err)
 		}
-
-		phones, err := gogl.extractPhoneNumbersFromAllPossibleURLs(linkText.String())
+		phones, err := gogl.extractPhoneNumbersFromAllPossibleURLs(link)
 		if err != nil {
 			logrus.Errorf("Search: %v", err)
 		}
-
-		// extract key-words
-		var keyWords []string
-		keyWords, err = gogl.extractKeywords(linkText.String())
+		keyWords, err := gogl.extractKeywords(link)
 		if err != nil {
 			logrus.Errorf("Search: %v", err)
 		}
-
 		gR := core.SearchResult{
 			Rank:        i + 1,
-			URL:         linkText.String(),
+			URL:         link,
 			Title:       title,
 			Phones:      phones,
 			Emails:      emails,
 			KeyWords:    keyWords,
 			Description: desc,
 		}
-		// fmt.Printf("%+v\n", gR)
 		searchResults = append(searchResults, gR)
-	}
-
-	if !gogl.Browser.LeavePageOpen {
-		err = page.Close()
-		if err != nil {
-			logrus.Error(err)
-		}
-	}
+	})
 	return searchResults, nil
 }
 
 func (gogl *Google) extractKeywords(path string) ([]string, error) {
-	/*var (
+	var (
 		maxLen               = 6
 		maxLenForEachKeyword = 72
 		h1h2h3QuerySelector  = "h1, h2, h3"
@@ -241,12 +171,11 @@ func (gogl *Google) extractKeywords(path string) ([]string, error) {
 	if len(keyWords) > maxLen {
 		keyWords = keyWords[:maxLen]
 	}
-	return keyWords, nil*/
-	return make([]string, 0), nil
+	return keyWords, nil
 }
 
 func (gogl *Google) extractEmails(path string) ([]string, error) {
-	/*emailsMap := make(map[string]struct{})
+	emailsMap := make(map[string]struct{})
 	emails := make([]string, 0)
 	resp, err := gogl.client.Get(path)
 	if err != nil {
@@ -268,8 +197,7 @@ func (gogl *Google) extractEmails(path string) ([]string, error) {
 	for k := range emailsMap {
 		emails = append(emails, k)
 	}
-	return emails, nil*/
-	return make([]string, 0), nil
+	return emails, nil
 }
 
 func (gogl *Google) extractPhoneNumbers(path string) []string {
@@ -284,16 +212,13 @@ func (gogl *Google) extractPhoneNumbers(path string) []string {
 			matches,
 			newMatches...,
 		)
-		if len(newMatches) != 0 {
-			// fmt.Println("found phone numbers: ", newMatches)
-		}
 	})
 	gogl.phoneCollector.Visit(path)
 	return matches
 }
 
 func (gogl *Google) extractPhoneNumbersFromAllPossibleURLs(p string) ([]string, error) {
-	/*phoneNums := make([]string, 0)
+	phoneNums := make([]string, 0)
 	pathes := make(map[string]struct{}, 0)
 	u, err := url.Parse(p)
 	if err != nil {
@@ -320,6 +245,11 @@ func (gogl *Google) extractPhoneNumbersFromAllPossibleURLs(p string) ([]string, 
 	for k := range phonesMap {
 		results = append(results, k)
 	}
-	return results, nil*/
-	return make([]string, 0), nil
+	return results, nil
+}
+
+func getRandomSec() int {
+	sec := rand.Intn(30) + 45
+	logrus.Println("sleep for: ", sec)
+	return sec
 }

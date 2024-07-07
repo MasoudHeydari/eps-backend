@@ -90,7 +90,7 @@ func buildEngine(engineType string) core.SearchEngine {
 	if err != nil {
 		logrus.Error(err)
 	}
-	browser.Initialize()
+	// browser.Initialize()
 	var engine core.SearchEngine
 	switch strings.ToLower(engineType) {
 	case "google":

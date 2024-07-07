@@ -218,22 +218,22 @@ func search01(ctx context.Context, client *ent.Client, loc, lang, searchQ string
 		default:
 			results, err := searchBrowser(engine, query)
 			if err != nil {
-				logrus.Error(err)
-				//return
-				continue
-			}
-
-			// Save found records into the DB
-			err = db.InsertBulk(ctx, client, results, loc, lang, searchQ, sqID)
-			if err != nil {
-				switch {
-				case ent.IsConstraintError(err):
-				default:
-					logrus.Errorf("failed to insert results to DB, error: %v", err)
-					return
+				logrus.Error("search01: ", err)
+				fmt.Println("Len of results: ", len(results))
+			} else {
+				// Save found records into the DB
+				err = db.InsertBulk(ctx, client, results, loc, lang, searchQ, sqID)
+				if err != nil {
+					switch {
+					case ent.IsConstraintError(err):
+					default:
+						logrus.Errorf("failed to insert results to DB, error: %v", err)
+						return
+					}
 				}
+				query.NextPage()
+				fmt.Println("move to next page...")
 			}
-			query.NextPage()
 		}
 	}
 }
